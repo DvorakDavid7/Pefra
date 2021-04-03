@@ -1,7 +1,6 @@
 <template>
   <div class="Products">
     <div class="container">
-
       <div class="row">
         <div class="col-12 col-md-4 d-flex justify-content-center">
           <div class="card text-center" style="width: 12rem">
