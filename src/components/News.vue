@@ -1,75 +1,89 @@
 <template>
-    <div class="News text-center">
-      <h1 class="mb-3" id="news-title">AKTUALITY</h1>
-      <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <div>
+        <div class="text-center mb-5">
+            <h4>Aktuální <strong>novinky</strong></h4>
         </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active text-center" data-bs-interval="10000">
-            <h3>AKTUALITY</h3>
-            <p>Lorem Ipsum</p>
-          </div>
-          <div class="carousel-item text-center" data-bs-interval="2000">
-            <h3>AKTUALITY</h3>
-            <p>Lorem Ipsum</p>
-          </div>
-          <div class="carousel-item text-center">
-            <h3>AKTUALITY</h3>
-            <p>Lorem Ipsum</p>
-          </div>
+
+        <div id="carouselExampleDark" class="carousel carousel-dark slide container" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div v-for="(post, index) in news" :key="index" :class="{ active: index === 1}" class="carousel-item"
+                     data-bs-interval="10000">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="text-center">
+                                <h5>{{ post["title"] }}</h5>
+                            </div>
+                            <div class="small-text">{{ post["created"] }}</div>
+                            {{ post["content"] }}
+                            <br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
     </div>
+
 </template>
 
 <script>
 export default {
-    name: "News"
+    name: "News",
+
+    data() {
+        return {
+            API_URL: "https://pefra.cz/api/news.php",
+            news: []
+        }
+    },
+
+    async created() {
+        const response = await fetch(this.API_URL)
+        if (response.ok) {
+            const responseData = await response.json()
+            this.news = responseData["data"]
+        } else {
+            console.log("error: cannot connect to server")
+        }
+    }
 }
 </script>
 
 <style scoped lang="scss">
-#news-title{
+@import "../scss/_variables.scss";
 
+
+.carousel-item .card {
+    width: 50%;
+    margin: auto;
 }
 
-
-.carousel{
-  height: 25vh !important;
-  width: 25%;
-  margin-right: auto;
-  margin-left: auto;
-
+.card {
+    border: none;
 }
 
-.carousel-item {
-  width: 100%;
-  height: 100%;
-
+.card-body {
+    color: $pefra-fontcolor-dark;
+    background-color: $pefra-news-background;
 }
 
-.carousel-control-next, .carousel-control-prev {
-  background-color: black;
-  height: 20%;
-  margin-top: auto;
+.card-header {
+    color: $pefra-fontcolor-dark;
 }
 
-.carousel-indicators button {
-  background-color: black;
+.card-footer {
+    color: $pefra-fontcolor-dark;
 }
 
-
-
-
+.small-text {
+    font-size: 0.8rem;
+    color: $pefra-color-light-blue;
+}
 </style>

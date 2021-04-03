@@ -2,6 +2,7 @@
 
 
 require_once "utils/DatabaseHandler.php";
+require_once "utils/allowCors.php";
 
 function getNews()
 {
@@ -22,4 +23,5 @@ function getNews()
     echo json_encode($result);
 }
 
+allowCors();
 getNews();
