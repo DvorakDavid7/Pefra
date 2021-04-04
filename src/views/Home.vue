@@ -14,7 +14,7 @@
         </div>
         <News class="mt-5"/>
         <Parallax class="mt-5"/>
-        <Footer class="mt-5"/>
+        <Footer class="mt-0"/>
     </div>
 </template>
 
