@@ -13,7 +13,7 @@
             </div>
             <div class="col-12 col-md-4 d-flex justify-content-center">
                 <div class="card text-center" style="width: 12rem">
-                    <img class="card-img-top" alt="..." src="../assets/service_1.jpg">
+                    <img class="card-img-top" alt="..." src="../assets/service_2.png">
                     <div class="card-body">
                         <h3 class="card-title">Card title</h3>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk
@@ -23,7 +23,7 @@
             </div>
             <div class="col-12 col-md-4 d-flex justify-content-center">
                 <div class="card text-center" style="width: 12rem">
-                    <img class="card-img-top" alt="..." src="../assets/service_1.jpg">
+                    <img class="card-img-top" alt="..." src="../assets/service_3.png">
                     <div class="card-body">
                         <h3 class="card-title">Card title</h3>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk

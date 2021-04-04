@@ -32,7 +32,7 @@ export default {
 }
 
 .parallax-img {
-    background: url("../../src/assets/paralax.jpg");
+    background: url("../assets/parallax.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
