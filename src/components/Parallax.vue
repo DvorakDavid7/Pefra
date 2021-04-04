@@ -6,24 +6,24 @@
                     <div class="col-12 col-md-4 mb-4">
                         <div class="parallax-content">
                             <a href="#">
-                                <img src="../assets/paralaxColumn_1.jpg" class="parallax-column_img">
-                                <h3 id="parallax-content_title">O NÁS</h3>
+                                <img src="../assets/paralaxColumn_1.jpg" alt="parallax" class="parallax-column_img">
+                                <h3 class="parallax-content_title">O NÁS</h3>
                             </a>
                         </div>
                     </div>
                     <div class="col-12 col-md-4 mb-4">
                         <div class="parallax-content">
                             <a href="#">
-                                <img src="../assets/paralaxColumn_2.jpg" class="parallax-column_img">
-                                <h3 id="parallax-content_title">KONTAKT</h3>
+                                <img src="../assets/paralaxColumn_2.jpg" alt="parallax" class="parallax-column_img">
+                                <h3 class="parallax-content_title">KONTAKT</h3>
                             </a>
                         </div>
                     </div>
                     <div class="col-12 col-md-4 mb-4">
                         <div class="parallax-content">
                             <a href="#">
-                                <img src="../assets/paralaxColumn_3.jpg" class="parallax-column_img">
-                                <h3 id="parallax-content_title">POKRYTÍ</h3>
+                                <img src="../assets/paralaxColumn_3.jpg" alt="parallax" class="parallax-column_img">
+                                <h3 class="parallax-content_title">POKRYTÍ</h3>
                             </a>
                         </div>
                     </div>
@@ -94,7 +94,7 @@ export default {
 
 }
 
-#parallax-content_title {
+.parallax-content_title {
     position: absolute;
     left: 25%;
     right: 25%;
