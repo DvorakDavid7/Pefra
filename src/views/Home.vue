@@ -2,7 +2,7 @@
     <div class="home">
         <Navigation/>
         <Carousel/>
-        <Products class="mt-5"/>
+        <Products class="mt-5 pt-4"/>
         <div class="text-center container mt-5">
             <p>
                 Naše firma se zabývá zpracováním kovových materiálů, a následnou výrobou

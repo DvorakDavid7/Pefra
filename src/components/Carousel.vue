@@ -8,25 +8,30 @@
             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
                     aria-label="Slide 3"></button>
         </div>
+        <div class="carousel-text d-xl-block d-md-none d-sm-none d-none">
+            <h5 class="carousel-info1">ZPRACOVÁNÍ A SVÁŘENÍ</h5>
+            <h3 class="carousel-info2">OCELOVÝCH KONSTRUKCÍ A JINÝCH VÝROBKŮ</h3>
+        </div>
         <div class="carousel-inner">
             <div class="carousel-item active">
                 <img src="../assets/carousel_1.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption ">
-                    <p>Some representative placeholder content for the first slide.</p>
+                    <p></p>
                 </div>
                 <h5 class="carousel-title d-xl-block d-md-none d-sm-none d-none">First slide label</h5>
+
             </div>
             <div class="carousel-item">
                 <img src="../assets/carousel_2.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption">
-                    <p>Some representative placeholder content for the second slide.</p>
+                    <p></p>>
                 </div>
                 <h5 class="carousel-title d-xl-block d-md-none d-sm-none d-none">Second slide label</h5>
             </div>
             <div class="carousel-item">
                 <img src="../assets/carousel_3.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption">
-                    <p>Some representative placeholder content for the third slide.</p>
+                    <p></p>
                 </div>
                 <h5 class="carousel-title d-xl-block d-md-none d-sm-none d-none">Third slide label</h5>
             </div>
@@ -51,6 +56,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
+@import "../scss/_variables.scss";
 
 .carousel-indicators button {
     position: relative;
@@ -60,22 +66,25 @@ export default {
     position: relative !important;
 }
 
-
+.carousel-item img {
+    position: relative !important;
+    filter: brightness(75%) !important;
+}
 
 .carousel-title {
     width: fit-content !important;
     position: absolute;
     padding-right: 5rem;
-    padding-left: 5rem;
+    padding-left: 20rem;
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
-    left: 0%;
-    top: 80%;
-    background-color: blue;
-    z-index: 999;
-
+    top: 75%;
+    background-color: $pefra-background-primary;
+    z-index: 998;
+    opacity: 0.7 !important;
     animation: main 1s;
     transform-origin: left;
+    color: $pefra-color-light-blue;
 
 }
 
@@ -96,4 +105,20 @@ export default {
     }
 }
 
+.carousel-text {
+    position: absolute;
+    left: 60%;
+    top: 73%;
+    z-index: 999 !important;
+    color: $pefra-background-primary;
+    transform-origin: bottom;
+}
+
+.carousel-info1 {
+    margin: 0;
+}
+
+.carousel-info2 {
+    font-size: 30px;
+}
 </style>
