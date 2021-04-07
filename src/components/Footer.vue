@@ -1,7 +1,7 @@
 <template>
     <div class="footer">
         <div class="container">
-            <div class="text-center mb-5">
+            <div class="text-center pt-3 mb-5">
                 <h4>Kontaktní <strong>informace</strong></h4>
             </div>
             <div class="row">
