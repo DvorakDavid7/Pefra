@@ -64,8 +64,12 @@ export default {
     margin: auto;
     border-radius: 20%;
     opacity: 0.8;
+    transition: 0.5s;
 }
 
+.parallax-content:hover {
+    opacity: 1;
+}
 
 .parallax-img {
     background: url("../../src/assets/paralax.jpg");
