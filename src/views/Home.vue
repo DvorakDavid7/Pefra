@@ -3,7 +3,7 @@
         <Navigation/>
         <Carousel/>
         <Products class="mt-5 pt-4"/>
-        <div class="text-center container mt-5">
+        <div data-aos="fade-up" class="text-center container mt-5">
             <p>
                 Naše firma se zabývá zpracováním kovových materiálů, a následnou výrobou
                 svařovaných produktů. Jsou to převážně ocelové konstrukce a jiné
