@@ -18,7 +18,7 @@
                 <div class="carousel-caption ">
                     <p></p>
                 </div>
-                <h5 class="carousel-title d-xl-block d-md-none d-sm-none d-none">First slide label</h5>
+                <h5 class="carousel-title d-xl-block d-md-none d-sm-none d-none">Kovovýroba a zámečnické práce</h5>
 
             </div>
             <div class="carousel-item">
@@ -26,14 +26,14 @@
                 <div class="carousel-caption">
                     <p></p>>
                 </div>
-                <h5 class="carousel-title d-xl-block d-md-none d-sm-none d-none">Second slide label</h5>
+                <h5 class="carousel-title d-xl-block d-md-none d-sm-none d-none">Svařování metodou TIG a MAG</h5>
             </div>
             <div class="carousel-item">
                 <img src="../assets/carousel_3.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption">
                     <p></p>
                 </div>
-                <h5 class="carousel-title d-xl-block d-md-none d-sm-none d-none">Third slide label</h5>
+                <h5 class="carousel-title d-xl-block d-md-none d-sm-none d-none">Cena na míru</h5>
             </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"

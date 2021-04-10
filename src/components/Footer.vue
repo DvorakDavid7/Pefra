@@ -6,16 +6,16 @@
             </div>
             <div class="row">
                 <div class="col-12 col-md-4 text-center">
-                    <h1>TITLE</h1>
-                    <p>Some random text</p>
+                    <h1></h1>
+                    <p>Mlýnská 115, 683 33 Brankovice</p>
                 </div>
                 <div class="col-12 col-md-4 text-center">
-                    <h1>TITLE</h1>
-                    <p>Some random text</p>
+                    <p>mobil: 773 134 166</p>
+                    <p>tel: 725 355 644</p>
                 </div>
                 <div class="col-12 col-md-4 text-center">
-                    <h1>TITLE</h1>
-                    <p>Some random text</p>
+                    <h1></h1>
+                    <p>email: kovovyroba@pefra.cz</p>
                 </div>
             </div>
             <div class="text-center">
