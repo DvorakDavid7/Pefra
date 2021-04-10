@@ -5,7 +5,7 @@
                 <div class="card text-center" style="width: 15rem; height: 15rem">
                     <img class="card-img-top" alt="..." src="../assets/service_1.jpg">
                     <div class="card-body">
-                        <h6 class="card-title">Stavební zámečnictví</h6>
+                        <h5 class="card-title">Stavební zámečnictví</h5>
 <!--                        <p class="card-text">Some quick example text to build on the card title and make up the bulk-->
 <!--                            of the card's content.</p>-->
                     </div>
@@ -15,7 +15,7 @@
                 <div class="card text-center" style="width: 15rem; height: 15rem">
                     <img class="card-img-top" alt="..." src="../assets/service_2.jpg">
                     <div class="card-body">
-                        <h6 class="card-title">Dílenské práce</h6>
+                        <h5 class="card-title">Dílenské práce</h5>
 
                     </div>
                 </div>
@@ -24,7 +24,7 @@
                 <div class="card text-center" style="width: 15rem; height: 15rem">
                     <img class="card-img-top" alt="..." src="../assets/service_3.jpg">
                     <div class="card-body">
-                        <h6 class="card-title">Povrchové úpravy</h6>
+                        <h5 class="card-title">Povrchové úpravy</h5>
                     </div>
                 </div>
             </div>
@@ -32,7 +32,7 @@
                 <div class="card text-center" style="width: 15rem; height: 15rem">
                     <img class="card-img-top" alt="..." src="../assets/service_4.jpg">
                     <div class="card-body">
-                        <h6 class="card-title">Ostatní práce a služby</h6>
+                        <h5 class="card-title">Ostatní práce a služby</h5>
                     </div>
                 </div>
             </div>
@@ -51,6 +51,7 @@ export default {
 .card {
     border: none;
     color: black;
+    cursor: pointer;
 }
 
 .card img {

@@ -41,16 +41,16 @@
                 <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            <a class="nav-link active" aria-current="page" href="#">Domů</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="#">Features</a>
+                            <a class="nav-link active" href="#">O nás</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="#">Pricing</a>
+                            <a class="nav-link active" href="#">Galerie</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                            <a class="nav-link active" href="#">Kontakt</a>
                         </li>
                     </ul>
                 </div>
