@@ -52,7 +52,7 @@ export default {
     display: inline-block;
     position: relative;
     width: 12rem;
-    height: 7rem;
+    height: 5rem;
     font-size: 5px;
     background: $pefra-background-secondary;
     margin: auto;
@@ -87,7 +87,7 @@ export default {
     position: absolute;
     left: 20%;
     right: 25%;
-    top: 35%;
+    top: 30%;
     opacity: 0.7;
     pointer-events: none;
     text-decoration: none;
