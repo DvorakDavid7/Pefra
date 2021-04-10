@@ -1,32 +1,24 @@
 <template>
+
     <div class="parallax">
         <div class="parallax-img">
-            <div class="container d-flex justify-content-center align-items-end">
+            <div class="container d-flex justify-content-center align-items-end text-center">
                 <div class="row text-center">
-                    <div class="col-12 col-md-4 mb-4">
-                        <div class="parallax-content">
-                            <a href="#">
-                                <img src="../assets/paralaxColumn_1.jpg" alt="parallax" class="parallax-column_img">
-                                <h3 class="parallax-content_title">O NÁS</h3>
-                            </a>
+                    <a class="col-12 col-md-4 mb-4" href="#">
+                        <div class="parallax-content" >
+                            <h3 class="parallax-content_title">O NÁS</h3>
                         </div>
-                    </div>
-                    <div class="col-12 col-md-4 mb-4">
+                    </a>
+                    <a class="col-12 col-md-4 mb-4" >
                         <div class="parallax-content">
-                            <a href="#">
-                                <img src="../assets/paralaxColumn_2.jpg" alt="parallax" class="parallax-column_img">
                                 <h3 class="parallax-content_title">KONTAKT</h3>
-                            </a>
                         </div>
-                    </div>
-                    <div class="col-12 col-md-4 mb-4">
+                    </a>
+                    <a class="col-12 col-md-4 mb-4">
                         <div class="parallax-content">
-                            <a href="#">
-                                <img src="../assets/paralaxColumn_3.jpg" alt="parallax" class="parallax-column_img">
                                 <h3 class="parallax-content_title">POKRYTÍ</h3>
-                            </a>
                         </div>
-                    </div>
+                    </a>
                 </div>
             </div>
         </div>
@@ -35,17 +27,17 @@
 
 <script>
 export default {
-    name: "Parallax"
-    // const paralax = document.querySelector(".paralax-img");
-    // window.addEventListener("scroll", function () {
-    //     let offset: number = window.pageYOffset;
-    //     console.log(offset);
-    //     paralax.style.backgroundPositionY = offset * 0.5 + "px";
-    // })
+    //sem mi nešel dát import vůbec, takže ani ten parallax se nenacetl. Posílám to bez toho package možna jsem to spatne naistnaloval
+    name: "Parallax",
+
+
 }
+
 </script>
 
-<style scoped>
+<style scoped lang="scss">
+@import "../scss/_variables.scss";
+
 
 .parallax {
     height: 70vh;
@@ -57,12 +49,21 @@ export default {
 }
 
 .parallax-content {
+    display: inline-block;
     position: relative;
-    width: 100%;
-    height: 100%;
+    width: 12rem;
+    height: 5rem;
     font-size: 5px;
+    background: $pefra-background-secondary;
+    margin: auto;
+    border-radius: 20%;
+    opacity: 0.8;
+    transition: 0.5s;
 }
 
+.parallax-content:hover {
+    opacity: 1;
+}
 
 .parallax-img {
     background: url("../../src/assets/paralax.jpg");
@@ -72,19 +73,7 @@ export default {
     width: 100%;
     height: 100%;
     color: black;
-    filter: grayscale(30%);
-}
-
-.parallax-column_img {
-    width: 50%;
-    height: 100%;
-    border-radius: 30%;
-    opacity: 0.2;
-    transition: 1s;
-
-    -webkit-filter: blur(2px);
-    -ms-filter: blur(2px);
-    filter: blur(1px);
+    background-attachment: fixed;
 
 }
 
@@ -96,12 +85,14 @@ export default {
 
 .parallax-content_title {
     position: absolute;
-    left: 25%;
+    left: 20%;
     right: 25%;
-    top: 35%;
+    top: 30%;
     opacity: 0.7;
-    color: black;
     pointer-events: none;
     text-decoration: none;
+    color: $pefra-color-white !important;
+
 }
+
 </style>

@@ -8,7 +8,7 @@
                     </svg>
                     <span class="top-nav-text">
                         <span>ZÁKAZNICKÁ LINKA: </span>
-                        <strong>722 523 963</strong>
+                        <strong>725 355 644</strong>
                     </span>
                 </div>
                 <div>

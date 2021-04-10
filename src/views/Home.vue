@@ -2,14 +2,14 @@
     <div class="home">
         <Navigation/>
         <Carousel/>
-        <Products class="mt-5"/>
-        <div class="text-center container mt-5">
+        <Products class="mt-5 pt-4"/>
+        <div data-aos="fade-up" class="text-center container mt-5">
             <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                deserunt mollit anim id est laborum
+                Naše firma se zabývá zpracováním kovových materiálů, a následnou výrobou
+                svařovaných produktů. Jsou to převážně ocelové konstrukce a jiné
+                výrobky, brány , ozdobné kované mříže, okenní mříže, kovová reklamní
+                písmena , konstrukce billboardů, zábradlí, a jiné atypické výrobky na
+                zakázku.
             </p>
         </div>
         <News class="mt-5"/>
