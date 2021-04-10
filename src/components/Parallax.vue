@@ -9,12 +9,12 @@
                             <h3 class="parallax-content_title">O NÁS</h3>
                         </div>
                     </a>
-                    <a class="col-12 col-md-4 mb-4 m-auto m-md-auto">
+                    <a class="col-12 col-md-4 mb-4 m-auto m-md-auto" href="#">
                         <div class="parallax-content">
                                 <h3 class="parallax-content_title">KONTAKT</h3>
                         </div>
                     </a>
-                    <a class="col-12 col-md-4 mb-4 m-auto m-md-auto">
+                    <a class="col-12 col-md-4 mb-4 m-auto m-md-auto" href="#">
                         <div class="parallax-content">
                                 <h3 class="parallax-content_title">POKRYTÍ</h3>
                         </div>

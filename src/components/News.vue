@@ -72,6 +72,7 @@ export default {
 .card-body {
     color: $pefra-fontcolor-dark;
     background-color: $pefra-news-background;
+    opacity: 0.85;
 }
 
 .card-header {
