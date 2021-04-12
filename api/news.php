@@ -1,27 +1,36 @@
 <?php
 
+require_once "utils/Controller.php";
 
-require_once "utils/DatabaseHandler.php";
-require_once "utils/allowCors.php";
 
-function getNews()
+class NewsController extends Controller
 {
-    $db = new DatabaseHandler();
-    $connection = $db->getConnection();
+    public function getNews()
+    {
+        $query = "SELECT * FROM News ORDER BY created;";
+        $sqlResult = mysqli_query($this->connection, $query);
 
-    $query = "SELECT * FROM News;";
-    $sqlResult = mysqli_query($connection, $query);
+        $result = [
+            "data" => array()
+        ];
 
-    $result = [
-        "data" => array()
-    ];
-
-    while ($row = mysqli_fetch_assoc($sqlResult)) {
-        array_push($result["data"], $row);
+        while ($row = mysqli_fetch_assoc($sqlResult)) {
+            array_push($result["data"], $row);
+        }
+        header('Content-type: application/json');
+        echo json_encode($result);
     }
-    header('Content-type: application/json');
-    echo json_encode($result);
 }
 
-allowCors();
-getNews();
+
+$newsController = new NewsController();
+
+switch ($_SERVER["REQUEST_METHOD"]) {
+    case "GET":
+        $newsController->getNews();
+        break;
+
+    default:
+        http_response_code(404);
+        echo "service unavailable";
+}
