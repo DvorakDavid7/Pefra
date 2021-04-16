@@ -41,29 +41,30 @@
                 <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="/">Domů</a>
+                            <router-link class="nav-link" to="/">Domů</router-link>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="/pokryti">Pokrytí</a>
+                            <router-link class="nav-link" to="/pokryti">Pokrytí</router-link>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="/novinky">Novinky</a>
+                            <router-link class="nav-link" to="/novinky">Novinky</router-link>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="/galerie">Galerie</a>
+                            <router-link class="nav-link" to="/galerie">Galerie</router-link>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="/dilenske-prace">Dílenské Práce</a>
+                            <router-link class="nav-link" to="/dilenske-prace">Dílenské Práce</router-link>
+
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="/povrchove-upravy">Povrchové Úpravy</a>
+                            <router-link class="nav-link" to="/povrchove-upravy">Povrchové Úpravy</router-link>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="/zamecnictvi">Zámečnictví</a>
+                            <router-link class="nav-link" to="/zamecnictvi">Zámečnictví</router-link>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link active" href="/ostatni">Ostatní služby</a>
+                            <router-link class="nav-link" to="/ostatni">Ostatní služby</router-link>
                         </li>
                     </ul>
                 </div>
