@@ -41,16 +41,29 @@
                 <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Domů</a>
+                            <a class="nav-link active" aria-current="page" href="/">Domů</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="#">O nás</a>
+                            <a class="nav-link active" href="/pokryti">Pokrytí</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="#">Galerie</a>
+                            <a class="nav-link active" href="/novinky">Novinky</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="#">Kontakt</a>
+                            <a class="nav-link active" href="/galerie">Galerie</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="/dilenske-prace">Dílenské Práce</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="/povrchove-upravy">Povrchové Úpravy</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="/zamecnictvi">Zámečnictví</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link active" href="/ostatni">Ostatní služby</a>
                         </li>
                     </ul>
                 </div>
@@ -86,8 +99,9 @@ export default {
 }
 
 .nav-item {
-    margin-left: 2rem;
-    margin-right: 2rem;
+    font-weight: 600;
+    margin-left: 1rem;
+    margin-right: 1rem;
 }
 
 .socials-img {

@@ -10,7 +10,7 @@
                         </a>
                     </div>
                     <div class="col-12 col-md-4 mb-4 m-auto m-md-auto" >
-                        <a class="parallax-content" href="#">
+                        <a class="parallax-content" href="#" >
                                 <h3 class="parallax-content_title">KONTAKT</h3>
                         </a>
                     </div>
