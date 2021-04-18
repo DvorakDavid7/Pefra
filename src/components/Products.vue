@@ -42,7 +42,8 @@
 
 <script>
 export default {
-    name: "Products"
+    name: "Products",
+
 }
 </script>
 
