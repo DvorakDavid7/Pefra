@@ -8,8 +8,21 @@
         </div>
         -->
         <router-view/>
+        <img hidden :src="this.API_URL" alt="">
     </div>
 </template>
+
+<script>
+export default {
+    name: "App",
+
+    data() {
+        return {
+            API_URL: "https://web-statistics.azurewebsites.net/track.php"
+        }
+    },
+}
+</script>
 
 <style lang="scss">
 

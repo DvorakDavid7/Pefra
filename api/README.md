@@ -1,10 +1,10 @@
 # Pefra API
 
-To be able to connect to the database create class `__config`
+To be able to connect to the database create class `Config`
 in api root with following public properties:
 
 ```php
-class __config
+class Config
 {
     public static string $hostname = "";
     public static int $port = 0;

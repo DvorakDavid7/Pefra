@@ -1,7 +1,7 @@
 <?php
 
-require_once "DatabaseHandler.php";
-require_once "allowCors.php";
+require_once __DIR__ . "/utils/DatabaseHandler.php";
+require_once __DIR__ . "/utils/allowCors.php";
 
 class Controller
 {

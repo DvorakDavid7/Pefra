@@ -1,6 +1,6 @@
 <?php
 
-require_once "utils/Controller.php";
+require_once __DIR__ . "/Controller.php";
 
 
 class NewsController extends Controller
