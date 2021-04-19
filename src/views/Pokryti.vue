@@ -1,24 +1,31 @@
 <template>
-    <div class="pokryti">
-        <Navigation/>
-        <div class="cover-section text-center">
-            <div class="container">
-                <div class="map-container">
-                    <img src="../assets/cover_map.png">
-                    <div class="point Prague tippy" title="Praha"></div>
+    <div>
+        <div style="min-height: 100vh">
+            <Navigation/>
+            <div class="cover-section text-center mt-5">
+                <div class="container">
+                    <div class="map-container">
+                        <img src="../assets/cover_map.png" alt="">
+                        <div class="point Prague tippy" title="Praha"></div>
+                        <div class="point Brno tippy" title="Brno"></div>
+                    </div>
                 </div>
             </div>
         </div>
+        <Footer/>
     </div>
+
 </template>
 
 <script>
 import Navigation from "../components/Navigation";
+import Footer from "../components/Footer";
 
 
 export default {
     name: 'pokryti',
     components: {
+        Footer,
         Navigation,
     }
 
@@ -89,6 +96,11 @@ html, body {
 .Prague{
     top: 40%;
     left: 35%;
+}
+
+.Brno {
+    top: 67%;
+    left: 67%;
 }
 
 
