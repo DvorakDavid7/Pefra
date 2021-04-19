@@ -8,7 +8,6 @@
         </div>
         -->
         <router-view/>
-        <img hidden :src="this.API_URL" alt="">
     </div>
 </template>
 
@@ -21,6 +20,22 @@ export default {
             API_URL: "https://web-statistics.azurewebsites.net/track.php"
         }
     },
+
+    computed: {
+        url() {
+            if (location.hostname === "localhost")
+                return "http://localhost:5000/api/track.php"
+            return "https://pefra.cz/api/track.php"
+        }
+    },
+
+    async mounted() {
+        const response = await fetch(this.url, {
+            method: "POST"
+        })
+        const responseData = await response.json()
+        console.log(responseData)
+    }
 }
 </script>
 

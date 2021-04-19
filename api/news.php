@@ -17,7 +17,7 @@ class NewsController extends Controller
         while ($row = mysqli_fetch_assoc($sqlResult)) {
             array_push($result["data"], $row);
         }
-        header('Content-type: application/json');
+
         echo json_encode($result);
     }
 }
