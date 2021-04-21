@@ -5,7 +5,12 @@ import store from './store'
 import 'bootstrap'
 import AOS from 'aos';
 import 'aos/dist/aos.css'
+import VueGtag from "vue-gtag";
 
+
+Vue.use(VueGtag, {
+  config: { id: "G-KDP8XEC2V7" }
+}, router);
 
 AOS.init()
 
