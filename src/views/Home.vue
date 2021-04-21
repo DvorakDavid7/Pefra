@@ -5,11 +5,7 @@
         <Products class="mt-5 pt-4"/>
         <div data-aos="fade-up" class="text-center container mt-5">
             <p>
-                Naše firma se zabývá zpracováním kovových materiálů, a následnou výrobou
-                svařovaných produktů. Jsou to převážně ocelové konstrukce a jiné
-                výrobky, brány , ozdobné kované mříže, okenní mříže, kovová reklamní
-                písmena , konstrukce billboardů, zábradlí, a jiné atypické výrobky na
-                zakázku.
+            {{ content }}
             </p>
         </div>
         <News class="mt-5"/>
@@ -36,6 +32,28 @@ export default {
         News,
         Parallax,
         Footer
+    },
+
+    data() {
+        return {
+            content: "Naše firma se zabývá zpracováním kovových materiálů, a následnou výrobou\n" +
+                "svařovaných produktů. Jsou to převážně ocelové konstrukce a jiné\n" +
+                "výrobky, brány , ozdobné kované mříže, okenní mříže, kovová reklamní\n" +
+                "písmena , konstrukce billboardů, zábradlí, a jiné atypické výrobky na\n" +
+                "zakázku."
+        }
+    },
+
+    metaInfo() {
+        return {
+            title: 'Domů',
+            meta: [
+                {
+                    name: 'description',
+                    content: this.content
+                }
+            ]
+        }
     }
 }
 </script>

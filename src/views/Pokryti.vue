@@ -27,8 +27,19 @@ export default {
     components: {
         Footer,
         Navigation,
-    }
+    },
 
+    metaInfo() {
+        return {
+            title: 'Pokrytí',
+            meta: [
+                {
+                    name: 'description',
+                    content: "pokrytí"
+                }
+            ]
+        }
+    }
 }
 </script>
 

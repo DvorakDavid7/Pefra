@@ -5,15 +5,7 @@
             <div class="container text-center mt-5">
                 <div class="row">
                     <h1>STAVEBNÍ ZÁMEČNICTVÍ</h1>
-                    <p class="mt-3"> Ocelová schodiště včetně zábradlí brány posuvné, dvoukřídlé,
-                        samonosné, na dálkové ovládání, či ruční branky zábradlí interiérové,
-                        venkovní, ( nerezová, skleněná, dřevěná, ocelová) mříže pevné i
-                        otvírací, do sklepů, oken, kanceláře plotové díly ( tahokov, kované
-                        komponenty, jeklové, plechové, dřevěné) výstavní prvky, dekorace
-                        ocelové portály Lávky přístřešky s výplní skla, makrolon
-                        podpůrné konstrukce dle zadán přístřešky pro popelnicové stání
-                        reklamní stojany a cedul poklopy, dvířka, madla, držáky, atd.
-                        atypické práce dle dokumentace.</p>
+                    <p class="mt-3">{{ content }}</p>
                 </div>
                 <div class="row mt-5">
                     <div class="col-md-4 col-sm-12">
@@ -44,6 +36,32 @@ export default {
     components: {
         Footer,
         Navigation
+    },
+
+    data() {
+        return {
+            content: "Ocelová schodiště včetně zábradlí brány posuvné, dvoukřídlé,\n" +
+                "samonosné, na dálkové ovládání, či ruční branky zábradlí interiérové,\n" +
+                "venkovní, ( nerezová, skleněná, dřevěná, ocelová) mříže pevné i\n" +
+                "otvírací, do sklepů, oken, kanceláře plotové díly ( tahokov, kované\n" +
+                "komponenty, jeklové, plechové, dřevěné) výstavní prvky, dekorace\n" +
+                "ocelové portály Lávky přístřešky s výplní skla, makrolon\n" +
+                "podpůrné konstrukce dle zadán přístřešky pro popelnicové stání\n" +
+                "reklamní stojany a cedul poklopy, dvířka, madla, držáky, atd.\n" +
+                "atypické práce dle dokumentace."
+        }
+    },
+
+    metaInfo() {
+        return {
+            title: 'Zámečnictví',
+            meta: [
+                {
+                    name: 'description',
+                    content: this.content
+                }
+            ]
+        }
     }
 
 }

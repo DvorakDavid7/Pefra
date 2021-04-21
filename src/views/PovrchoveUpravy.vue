@@ -5,10 +5,7 @@
             <div class="surfacing-body">
                 <div class="container mt-5 text-center">
                     <h1>Povrchové úpravy</h1>
-                    <p class="mt-3">Nerezový, ocelový, dřevěný, skleněný, plastový, hliníkový, měděný
-                        materiál žárový zinek, základní nátěr, vrchní nátěr alkydovými i
-                        synteckými barvami, prášková barva (komaxit) galvanické pokovení
-                        Cortenové plechy – zrezlé materiály.</p>
+                    <p class="mt-3">{{ content }}</p>
                     <div class="row mt-5">
                         <div class="col-12 col-md-4 ">
                             <img class="surfacing-img" src="../assets/surfacing/surfacing_1.jpg" alt="">
@@ -37,6 +34,27 @@ export default {
     components: {
         Footer,
         Navigation,
+    },
+
+    data() {
+        return {
+            content: "Nerezový, ocelový, dřevěný, skleněný, plastový, hliníkový, měděný\n" +
+                "materiál žárový zinek, základní nátěr, vrchní nátěr alkydovými i\n" +
+                "synteckými barvami, prášková barva (komaxit) galvanické pokovení\n" +
+                "Cortenové plechy – zrezlé materiály."
+        }
+    },
+
+    metaInfo() {
+        return {
+            title: 'Povrchové úpravy',
+            meta: [
+                {
+                    name: 'description',
+                    content: this.content
+                }
+            ]
+        }
     }
 
 }
