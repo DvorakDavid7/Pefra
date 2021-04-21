@@ -1,6 +1,6 @@
 <template>
     <div>
-        <div style="min-height: 100vh">
+        <div class="custom-viewport">
             <Navigation/>
             <div class="container mt-5 text-center">
                 <h1>Dílenské práce</h1>
@@ -9,13 +9,13 @@
                     materiálů..</p>
                 <div class="row mt-5">
                     <div class="col-md-4 col-sm-12">
-                        <img class="workshop-img" src="../assets/locksmithing/locksmithing_1.jpg" alt="">
+                        <img class="workshop-img" src="../assets/workshop/workshop_1.jpg" alt="">
                     </div>
                     <div class="col-md-4 col-sm-12">
-                        <img class="workshop-img" src="../assets/locksmithing/locksmithing_2.jpg" alt="">
+                        <img class="workshop-img" src="../assets/workshop/workshop_2.jpg" alt="">
                     </div>
                     <div class="col-md-4 col-sm-12">
-                        <img class="workshop-img" src="../assets/locksmithing/locksmithing_3.jpg" alt="">
+                        <img class="workshop-img" src="../assets/workshop/workshop_3.jpg" alt="">
                     </div>
                 </div>
             </div>
@@ -40,10 +40,12 @@ export default {
 </script>
 
 <style scoped>
+@import "../scss/_globals.scss";
 
 .workshop-img {
-    width: 50%;
+    width: 70%;
     height: 70%;
+    border-radius: 5px;
 }
 
 </style>

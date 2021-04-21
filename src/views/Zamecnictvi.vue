@@ -1,6 +1,6 @@
 <template>
     <div>
-        <div style="min-height: 100vh">
+        <div class="custom-viewport">
             <Navigation/>
             <div class="container text-center mt-5">
                 <div class="row">
@@ -53,7 +53,8 @@ export default {
 <style scoped>
 
 .locksmithing-img {
-    width: 50%;
+    width: 70%;
     height: 70%;
+    border-radius: 5px;
 }
 </style>

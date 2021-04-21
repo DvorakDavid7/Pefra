@@ -1,6 +1,6 @@
 <template>
     <div>
-        <div style="min-height: 100vh">
+        <div style="">
             <Navigation/>
             <div class="cover-section text-center mt-5">
                 <div class="container">

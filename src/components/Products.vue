@@ -2,39 +2,38 @@
     <div class="container">
         <div class="row text-center">
             <div class="col-12 col-md-3 d-flex justify-content-center">
-                <div class="card text-center" style="width: 15rem; height: 15rem">
+                <router-link class="card text-center" style="width: 15rem; height: 15rem" to="/zamecnictvi">
                     <img class="card-img-top" alt="..." src="../assets/service_1.jpg">
                     <div class="card-body">
                         <h5 class="card-title">Stavební zámečnictví</h5>
 <!--                        <p class="card-text">Some quick example text to build on the card title and make up the bulk-->
 <!--                            of the card's content.</p>-->
                     </div>
-                </div>
+                </router-link>
             </div>
             <div class="col-12 col-md-3 d-flex justify-content-center">
-                <div class="card text-center" style="width: 15rem; height: 15rem">
+                <router-link class="card text-center" style="width: 15rem; height: 15rem" to="dilenske-prace">
                     <img class="card-img-top" alt="..." src="../assets/service_2.jpg">
                     <div class="card-body">
                         <h5 class="card-title">Dílenské práce</h5>
-
                     </div>
-                </div>
+                </router-link>
             </div>
             <div class="col-12 col-md-3 d-flex justify-content-center">
-                <div class="card text-center" style="width: 15rem; height: 15rem">
+                <router-link class="card text-center" style="width: 15rem; height: 15rem" to="povrchove-upravy">
                     <img class="card-img-top" alt="..." src="../assets/service_3.jpg">
                     <div class="card-body">
                         <h5 class="card-title">Povrchové úpravy</h5>
                     </div>
-                </div>
+                </router-link>
             </div>
             <div class="col-12 col-md-3 d-flex justify-content-center">
-                <div class="card text-center" style="width: 15rem; height: 15rem">
+                <router-link class="card text-center" style="width: 15rem; height: 15rem" to="ostatni">
                     <img class="card-img-top" alt="..." src="../assets/service_4.jpg">
                     <div class="card-body">
                         <h5 class="card-title">Ostatní práce a služby</h5>
                     </div>
-                </div>
+                </router-link>
             </div>
         </div>
     </div>
@@ -53,6 +52,7 @@ export default {
     border: none;
     color: black;
     cursor: pointer;
+    text-decoration: none;
 }
 
 .card img {

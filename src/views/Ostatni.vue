@@ -1,6 +1,6 @@
 <template>
     <div>
-        <div style="min-height: 100vh">
+        <div class="custom-viewport">
             <Navigation/>
             <div class="workshop-body">
                 <div class="container mt-5 text-center">
@@ -11,13 +11,13 @@
                         truhlářskou, stavební, zahradní.</p>
                     <div class="row mt-5">
                         <div class="col-md-4 col-sm-12">
-                            <img class="other-img" src="../assets/locksmithing/locksmithing_1.jpg" alt="">
+                            <img class="other-img" src="../assets/other/other_1.jpg" alt="">
                         </div>
                         <div class="col-md-4 col-sm-12">
-                            <img class="other-img" src="../assets/locksmithing/locksmithing_2.jpg" alt="">
+                            <img class="other-img" src="../assets/other/other_2.jpg" alt="">
                         </div>
                         <div class="col-md-4 col-sm-12">
-                            <img class="other-img" src="../assets/locksmithing/locksmithing_3.jpg" alt="">
+                            <img class="other-img" src="../assets/other/other_3.jpg" alt="">
                         </div>
                     </div>
                 </div>
@@ -46,7 +46,8 @@ export default {
 <style scoped>
 
 .other-img {
-    width: 50%;
+    width: 70%;
     height: 70%;
+    border-radius: 5px;
 }
 </style>
