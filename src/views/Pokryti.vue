@@ -1,6 +1,6 @@
 <template>
     <div>
-        <div style="">
+        <div class="custom-viewport">
             <Navigation/>
             <div class="cover-section text-center mt-5">
                 <div class="container">

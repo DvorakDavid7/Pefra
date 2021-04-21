@@ -2,7 +2,7 @@
     <div>
         <div class="custom-viewport">
             <Navigation/>
-            <div class="container">
+            <div class="container mt-5">
                 <div v-for="(post, index) in news" :key="index" :class="{ active: index === 1}" class="card-body"
                      data-bs-interval="10000">
                     <div class="card">

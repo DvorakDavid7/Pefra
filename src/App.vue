@@ -14,6 +14,8 @@
 <style lang="scss">
 
 @import "../node_modules/bootstrap/scss/bootstrap";
+@import "./scss/_globals.scss";
+
 
 * {
     outline: 0;
