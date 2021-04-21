@@ -49,6 +49,18 @@ export default {
         } else {
             console.log("error: cannot connect to server")
         }
+    },
+
+    metaInfo() {
+        return {
+            title: 'Novinky',
+            meta: [
+                {
+                    name: 'description',
+                    content: "novinky"
+                }
+            ]
+        }
     }
 }
 </script>

@@ -56,6 +56,18 @@ export default {
     components: {
         Footer,
         Navigation,
+    },
+
+    metaInfo() {
+        return {
+            title: 'Galerie',
+            meta: [
+                {
+                    name: 'description',
+                    content: "galerie"
+                }
+            ]
+        }
     }
 
 }
