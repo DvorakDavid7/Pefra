@@ -24,7 +24,7 @@
             <div class="carousel-item">
                 <img src="../assets/carousel_2.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption">
-                    <p></p>>
+                    <p></p>
                 </div>
                 <h5 class="carousel-title d-xl-block d-md-none d-sm-none d-none">Svařování metodou TIG a MAG</h5>
             </div>
@@ -107,7 +107,7 @@ export default {
 
 .carousel-text {
     position: absolute;
-    left: 60%;
+    left: 55%;
     top: 73%;
     z-index: 999 !important;
     color: $pefra-background-primary;

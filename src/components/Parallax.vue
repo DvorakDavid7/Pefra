@@ -5,19 +5,19 @@
             <div class="container d-flex justify-content-center align-items-end text-center">
                 <div class="row text-center">
                     <div class="col-12 col-md-4 mb-4 m-auto m-md-auto">
-                        <a class="parallax-content" href="#" >
-                            <h3 class="parallax-content_title">O NÁS</h3>
-                        </a>
+                        <router-link class="parallax-content" to="pokryti" >
+                            <h3 class="parallax-content_title">POKRYTÍ</h3>
+                        </router-link>
                     </div>
                     <div class="col-12 col-md-4 mb-4 m-auto m-md-auto" >
-                        <a class="parallax-content" href="#">
-                                <h3 class="parallax-content_title">KONTAKT</h3>
-                        </a>
+                        <router-link class="parallax-content" to="novinky" >
+                                <h3 class="parallax-content_title">NOVINKY</h3>
+                        </router-link>
                     </div>
                     <div class="col-12 col-md-4 mb-4 m-auto m-md-auto" >
-                        <a class="parallax-content" href="#">
-                                <h3 class="parallax-content_title">POKRYTÍ</h3>
-                        </a>
+                        <router-link class="parallax-content" to="galerie">
+                                <h3 class="parallax-content_title">GALERIE</h3>
+                        </router-link>
                     </div>
                 </div>
             </div>
@@ -59,9 +59,6 @@ export default {
     border-radius: 20%;
     opacity: 0.8;
     transition: 0.5s;
-    margin-left: 3rem;
-    margin-right: 3rem;
-    margin-bottom: 3rem;
 }
 
 .parallax-content:hover {

@@ -1,6 +1,6 @@
 <?php
 
-require_once __DIR__ . "/../__config.php";
+require_once __DIR__ . "/../Config.php";
 
 class DatabaseHandler
 {
@@ -14,11 +14,11 @@ class DatabaseHandler
 
     public function __construct()
     {
-        $this->hostname = __config::$hostname;
-        $this->port = __config::$port;
-        $this->username = __config::$username;
-        $this->password = __config::$password;
-        $this->database = __config::$database;
+        $this->hostname = Config::$hostname;
+        $this->port = Config::$port;
+        $this->username = Config::$username;
+        $this->password = Config::$password;
+        $this->database = Config::$database;
 
         $this->connection = new mysqli($this->hostname, $this->username, $this->password, $this->database, $this->port);
         if ($this->connection->connect_error) {
