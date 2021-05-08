@@ -4,7 +4,7 @@
             <Navigation/>
             <div class="container text-center mt-5">
                 <div class="row">
-                    <h1>STAVEBNÍ ZÁMEČNICTVÍ</h1>
+                    <h1>Stavební zámečnictví</h1>
                     <p class="mt-3">{{ content }}</p>
                 </div>
                 <div class="row mt-5">

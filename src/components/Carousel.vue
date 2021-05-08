@@ -33,7 +33,7 @@
                 <div class="carousel-caption">
                     <p></p>
                 </div>
-                <h5 class="carousel-title d-xl-block d-md-none d-sm-none d-none">Cena na míru</h5>
+                <h5 class="carousel-title d-xl-block d-md-none d-sm-none d-none">Teamwork</h5>
             </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"

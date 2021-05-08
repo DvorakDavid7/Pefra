@@ -11,7 +11,7 @@
                 </div>
                 <div class="col-12 col-md-4 text-center">
                     <p>mobil: 773 134 166</p>
-                    <p>tel: 725 355 644</p>
+                    <p>tel: 725 355 655</p>
                 </div>
                 <div class="col-12 col-md-4 text-center">
                     <h1></h1>

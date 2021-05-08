@@ -8,7 +8,7 @@
                     </svg>
                     <span class="top-nav-text">
                         <span>ZÁKAZNICKÁ LINKA: </span>
-                        <strong>725 355 644</strong>
+                        <strong>725 355 655</strong>
                     </span>
                 </div>
                 <div>
@@ -64,7 +64,7 @@
                         </li>
 
                         <li class="nav-item">
-                            <router-link class="nav-link" to="/ostatni">Ostatní služby</router-link>
+                            <router-link class="nav-link" to="/okna">Okna</router-link>
                         </li>
                     </ul>
                 </div>

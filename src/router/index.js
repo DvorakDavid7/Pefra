@@ -44,9 +44,9 @@ const routes = [
         component: () => import('../views/Zamecnictvi.vue')
     },
     {
-        path: '/ostatni',
-        name: 'ostatni',
-        component: () => import('../views/Ostatni.vue')
+        path: '/okna',
+        name: 'okna',
+        component: () => import('../views/Okna.vue')
     },
 
 ]
